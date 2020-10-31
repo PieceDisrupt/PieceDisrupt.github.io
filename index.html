@@ -1,0 +1,607 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Piece | Putting It All Together.</title>
+    <meta name="description" content="Piece is where all your business ideas are assembled into reality with innovative technology and solutions.">
+    <script src="themekit/scripts/jquery.min.js"></script>
+    <script src="themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="themekit/css/style.css">
+    <link rel="stylesheet" href="themekit/css/glide.css">
+    <link rel="stylesheet" href="themekit/css/content-box.css">
+    <link rel="stylesheet" href="themekit/css/contact-form.css">
+    <link rel="stylesheet" href="skin.css">
+    <link rel="icon" href="media/favicon.png">
+    <meta name="msapplication-TileColor" content="#37517E" />
+    <meta name="theme-color" content="#37517E" />
+    <style>
+        .box-steps {
+            overflow: hidden;
+        }
+        .step-item{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .step-item:first-child {
+            justify-content: flex-start;
+        }
+
+        .step-item:last-child {
+            justify-content: flex-end;
+        }
+
+        .step-item::before {
+            width: 150%;
+        }
+
+        .techs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 120px
+        }
+
+        @media (max-width: 767.98px) {
+            .step-item:first-child {
+                justify-content: center;
+            }
+
+            .step-item:last-child {
+                justify-content: center;
+            }
+
+            [data-columns='5'] > div, .box-steps[data-columns='5'] {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader"></div>
+    <nav class="menu-classic menu-fixed menu-transparent menu-one-page align-right light" data-menu-anima="fade-bottom" data-scroll-detect="true">
+        <div class="container">
+            <div class="menu-brand">
+                <a href="#">
+                    <img class="logo-default" src="media/logo-light.svg" alt="logo" />
+                    <img class="logo-retina" src="media/logo-light.svg" alt="logo" />
+                </a>
+            </div>
+            <i class="menu-btn"></i>
+            <div class="menu-cnt">
+                <ul>
+                    <li>
+                        <a href="#overview">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#service">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="#pricing">Packages</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#products">Our Products</a>
+                    </li>
+                    <li>
+                        <a href="#clients">Clients</a>
+                    </li> -->
+                </ul>
+                <div class="menu-right">
+                    <div class="menu-custom-area">
+                        <a class="btn btn-border btn-circle btn-xs" href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section id="overview" class="section-image section-full-width-right light section-bottom-layer" style="background-image:url(media/bg.svg)">
+            <div class="container">
+                <hr class="space" />
+                <div class="row">
+                    <div class="col-lg-6" data-anima="fade-in" data-time="1000">
+                        <hr class="space" />
+                        <h1>
+                            We Are <span style="color: #59B3E4;">Piece</span>, Putting It All Together Is What We Do.
+                        </h1>
+                        <p>
+                            Piece is where all your business ideas are assembled into reality with innovative technology and solutions.
+                        </p>
+                        <a href="#about" class="btn btn-sm btn-circle shadow-1 full-width-sm">Learn More</a><span class="space"></span>
+                        <a href="#contact" class="btn btn-sm btn-circle shadow-1 btn-border full-width-sm">Get Started</a>
+                        <hr class="space" />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="width-min-835" src="media/iso-1.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section id="about" class="section-base section-color" style="background-color: #fff;">
+            <div class="container">
+                <h2 class="align-center">A Little About Us.</h2>
+                <hr class="space" />
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6" data-anima="fade-left" data-time="1000">
+                        <img class="margin-23" src="media/iso-2.png" alt="" />
+                    </div>
+                    <div class="col-lg-6 col-md-6" data-anima="fade-right" data-time="1000">
+                        <h2>Who We Are.</h2>
+                        <p>
+                            Piece is a leading web application development & IT consulting firm 
+                            delivering high performance software solutions across diverse industry verticals. 
+                            We proudly offer incredibly satisfying services with thoughtful aftersales support. 
+                            Our valuable experience in the industry has helped us build a team of 
+                            competent and highly experienced developers and IT specialists that help you 
+                            with everything from software/application development, web design and development 
+                            to enterprise solution.
+                    
+                        </p>
+                        <a href="#service" class="btn-text">Explore services</a>
+                    </div>
+                </div>
+                <hr class="space" />
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6" data-anima="fade-left" data-time="1000">
+                        <hr class="space-sm visible-md" />
+                        <h2>What We Do.</h2>
+                        <p>
+                            At Piece, 
+                            we aim at providing the best solutions to business 
+                            through groundbreaking innovations and by employing agile development methodology
+                             to provide your business every need.
+                        </p>
+                        <a href="#service" class="btn-text">Explore services</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6" data-anima="fade-right" data-time="1000">
+                        <img class="margin-23" src="media/iso-3.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-image align-center light" style="background-image:url(media/bg.svg)">
+            <div class="container">
+                <h2>Excellence In Agile Development.</h2>
+                <p style="margin: 0;">
+                    You Need A Better Application? Let's Build It For You.
+                </p>
+                <div class="box-steps" data-columns="5" style="text-align: left; padding-top: 24px;">
+                    <div class="step-item">
+                        <span>1</span>
+                        <div class="content">
+                            <h4>Plan</h4>
+                            <div>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span>2</span>
+                        <div class="content">
+                            <h4>Design & Development</h4>
+                            <div>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span>3</span>
+                        <div class="content">
+                            <h4>Testing</h4>
+                            <div>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span>4</span>
+                        <div class="content">
+                            <h4>Deployment</h4>
+                            <div>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <span>5</span>
+                        <div class="content">
+                            <h4>Security & Maintenance</h4>
+                            <div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="service" class="section-base section-color">
+            <div class="container">
+                <h2 class="align-center">A large range of Services.</h2>
+                <p class="align-center width-650">
+                    We provide the best of Services.
+                </p>
+                <hr class="space" />
+                <div class="grid-list" data-columns="3" data-columns-md="2" data-columns-xs="1">
+                    <div class="grid-box">
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-top-icon boxed">
+                                <i class="im-palette"></i>
+                                <div class="caption">
+                                    <h2>WEB DESIGN</h2>
+                                    <p>
+                                        Our vast experience in building quality websites 
+                                        allows us to offer highly impacting web designs
+                                        with easy usage, optimized content, 
+                                        high conversion of rate, and traffic growth over time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-top-icon boxed">
+                                <i class="im-coding"></i>
+                                <div class="caption">
+                                    <h2>WEB DEVELOPMENT</h2>
+                                    <p>
+                                        Our expert Web development team 
+                                        works with the cutting edge latest technology
+                                        and tools to deliver to you an highly efficient, 
+                                        Scalable and Maintenable Business Software solution.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-top-icon boxed">
+                                <i class="im-add-cart"></i>
+                                <div class="caption">
+                                    <h2>ECOMMERCE DEVELOPMENT</h2>
+                                    <p>
+                                        We offer complete end-to-end online shop implementation
+                                        from starting from user experience 
+                                        design and template customization, 
+                                        to advanced functionalities to improve sales optimization.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-top-icon boxed">
+                                <i class="im-arrow-loop"></i>
+                                <div class="caption">
+                                    <h2>CRM DEVELOPMENT</h2>
+                                    <p>
+                                        We help our customers and partner
+                                        consulting companies with complete end to end
+                                        consulting, implementation, configuration, 
+                                        development and administration of enterprise level 
+                                        CRM solutions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-top-icon boxed">
+                                <i class="im-bar-chart"></i>
+                                <div class="caption">
+                                    <h2>ERP DEVELOPMENT</h2>
+                                    <p>
+                                        Set yourself on the right growth path 
+                                        and grow your business in unique way with our ERP system. 
+                                        From consultation to implementation, administration, 
+                                        process and support, we have command in all.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-top-icon boxed">
+                                <i class="im-monitor-phone"></i>
+                                <div class="caption">
+                                    <h2>APP DEVELOPMENT</h2>
+                                    <p>
+                                        We have capabilities to build scalable applications
+                                        for web, mobile, desktop and wearables. 
+                                        Our expert Web development team works with 
+                                        the cutting edge latest technology and tools.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-top-icon boxed">
+                                <i class="im-data-center"></i>
+                                <div class="caption">
+                                    <h2>WEB HOSTING</h2>
+                                    <p>
+                                        We help you choose the right hosting solution 
+                                        & the level of support you need. 
+                                        From the on-demand management system to 
+                                        fully managed services, we will help you achieve another 
+                                        level of efficiency and security.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-top-icon boxed">
+                                <i class="im-firewall"></i>
+                                <div class="caption">
+                                    <h2>SECURITY</h2>
+                                    <p>
+                                        Its Very Important That You Don't Take any Chances
+                                        Regarding Security Of Your Systems.
+                                        Your website and application security is 
+                                        always our first priority. 
+                                        Our expert pentesters and security analyst
+                                        always provide best security solution.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="cnt-box cnt-box-top-icon boxed">
+                                <i class="im-handshake"></i>
+                                <div class="caption">
+                                    <h2>IT CONSULTANCY</h2>
+                                    <p>
+                                        Our consulting and business analysts team 
+                                        can help you with a complete requirements audit 
+                                        including requirement gathering 
+                                        and business processes. 
+                                        And thereby consulting you on 
+                                        the most optimum solution that meet your business needs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-image light" style="background-image:url(media/bg.svg)">
+            <div class="container">
+                <h3 class="align-center">Reaching The Heights Of Customer Services Satisfaction By Using<br /> 
+                    <span style="color: #59B3E4;">THE BEST TECHNOLOGIES</span>.
+                </h3>
+                <hr class="spacing" style="background-color: transparent; margin: 30px" />
+                <ul class="slider" data-options="type:carousel,arrows:true,nav:false,perView:6,perViewSm: 4,perViewMd: 5,perViewXs:3,controls:out">
+                    <li class="techs">
+                        <img src="media/html5.png" title="HTML5" />
+                        <span>HTML5</span>
+                    </li>
+                    <li class="techs">
+                        <img src="media/css3.png" width="80" title="CSS3" />
+                        <span>CSS3</span>
+                    </li>
+                    <li class="techs">
+                        <img src="media/react.png" width="70" title="ReactJS" />
+                        <span>React JS</span>
+                    </li>
+                    <li class="techs">
+                        <img src="media/native.png" width="90" title="React Native" />
+                        <span>React Native</span>
+                    </li>
+                    <li class="techs">
+                        <img src="media/node.png" width="100" title="Node JS" />
+                        <span>Node JS</span>
+                    </li>
+                    <li class="techs">
+                        <img src="media/php.png" width="90" title="PHP" />
+                        <span>PHP</span>
+                    </li>
+                    <li class="techs">
+                        <img src="media/laravel.png" width="120" title="Laravel" />
+                        <span>Laravel</span>
+                    </li>
+                    <li class="techs">
+                        <img src="media/mysql.png" width="120" title="MYSQL" />
+                        <span>MYSQL</span>
+                    </li>
+                    <li class="techs">
+                        <img src="media/postgres.png" width="120" title="Postgresql" />
+                        <span>Postgresql</span>
+                    </li>
+                    <li class="techs">
+                        <img src="media/mongodb.png" width="120" title="Mongo DB" />
+                        <span>Mongo DB</span>
+                    </li>
+                    <li class="techs">
+                        <img src="media/firebase.png" width="80" title="Firebase" />
+                        <span>Firebase</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="pricing" class="section-base">
+            <div class="container">
+                <h2 class="align-center">The best prices on the market.</h2>
+                <p class="align-center width-650">
+                    Choose One Of Our Best Pricing Plans That Sooths Your Needs.
+                </p>
+                <hr class="space" /><hr class="space-xs" />
+                <div class="row" data-anima="fade-bottom" data-time="1000" data-timeline="asc">
+                    <div class="col-lg-4 anima">
+                        <div class="cnt-box cnt-pricing-table">
+                            <div class="top-area">
+                                <h2>Personal plan</h2>
+                                
+                                <div class="price">$<span>249.99</span></div>
+                                <p>Per year</p>
+                            </div>
+                            <ul>
+                                <li>Static Website</li>
+                                <li>10-12 Pages Website</li>
+                                <li>WordPress CMS(Theme)</li>
+                                <li>Responsive M& Mobile Friendly</li>
+                                <li>SEO Friendly</li>
+                                <li>1 Year Domain Registration</li>
+                                <li>1 Year Web Hosting</li>
+                                <li class="strike">Maintenance & Support</li>
+                            </ul>
+                            <div class="bottom-area">
+                                <p>For Small Scale business interested in small Re-branding.</p>
+                                <a class="btn btn-circle btn-sm btn-border" href="#contact">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 anima">
+                        <div class="cnt-box cnt-pricing-table pricing-table-big">
+                            <div class="top-area">
+                                <h2>Business plan</h2>
+                                <div class="price">$<span>349.99</span></div>
+                                <p>Per year</p>
+                            </div>
+                            <ul>
+                                <li>Dynamic And Customizable</li>
+                                <li>15-20 Pages Website</li>
+                                <li>Custom Development On PHP</li>
+                                <li>Responsive M& Mobile Friendly</li>
+                                <li>SEO Friendly</li>
+                                <li>1 Year Domain Registration</li>
+                                <li>1 Year <b>Powerful</b> Web Hosting</li>
+                                <li>6 Month Maintenance & Support</li>
+                            </ul>
+                            <div class="bottom-area">
+                                <p>For Medium Scale Business looking to start Something Big.</p>
+                                <a class="btn btn-circle btn-sm btn-border" href="#contact">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 anima">
+                        <div class="cnt-box cnt-pricing-table">
+                            <div class="top-area">
+                                <h2>Enterprise plan</h2>
+                                <div class="price">$<span>449.99</span></div>
+                                <p>Per month</p>
+                            </div>
+                            <ul>
+                                <li>Fully Dynamic And Customizable</li>
+                                <li>25-30 Pages Website</li>
+                                <li>Custom Development On Framework</li>
+                                <li>Responsive M& Mobile Friendly</li>
+                                <li>SEO Friendly</li>
+                                <li>1 Year Domain Registration</li>
+                                <li>1 Year <b>Powerful</b> Web Hosting</li>
+                                <li>1 Year Maintenance & Support</li>
+                            </ul>
+                            <div class="bottom-area">
+                                <p>For Enterprise Business looking for highly scalable and efficient business solutions.</p>
+                                <a class="btn btn-circle btn-sm btn-border" href="#contact">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-image align-center light" style="background-image:url(media/bg.svg)">
+            <div class="container">
+                <h2>A solution for every level.</h2>
+                <p class="width-650">
+                    We can help bring that your Awesome Idea to life. A trial will convince you.
+                </p>
+                <hr class="space" />
+                <a class="btn btn-circle btn-sm btn-border" href="#contact">Get Started</a>
+            </div>
+        </section>
+        <section id="contact" class="section-base section-color">
+            <div class="container">
+                <div class="row" data-anima="fade-bottom" data-time="1000">
+                    <div class="col-lg-6">
+                        <form action="https://kudoskonnect.herokuapp.com/api/site/support" class="form-box form-ajax boxed-area" data-engine="node" method="post" data-email="info@piece.build">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>First name</p>
+                                    <input id="name" name="name" placeholder="Name" type="text" class="input-text" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Last name</p>
+                                    <input id="surname" name="surname" placeholder="Surname" type="text" class="input-text" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Email</p>
+                                    <input id="email2" name="email2" placeholder="Email" type="email" class="input-text" required>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Phone</p>
+                                    <input id="phone" name="phone" placeholder="Phone" type="text" class="input-text" required>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p>Address</p>
+                                    <input id="Address" name="Address" placeholder="Address" type="text" class="input-text" required>
+                                </div>
+                            </div>
+                            <button class="btn btn-sm btn-circle" type="submit">Send message</button>
+                            <div class="success-box">
+                                <div class="alert alert-success">Congratulations. Your message has been sent successfully</div>
+                            </div>
+                            <div class="error-box">
+                                <div class="alert alert-warning">Error, please retry. Your message has not been sent</div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <hr class="space-sm visible-md" />
+                        <h2>
+                            Get In Touch With Us, <br />Together We Can Shape The World.
+                        </h2>
+                        <p>
+                            Thank you for your interest. 
+                            Please fill out the contact form to inquire about our services. 
+                            You can expect to hear from us within 24 hours, 
+                            but we will get back to you asap.
+                        </p>
+                        <ul class="text-list text-list-line">
+                            <li><b>Address</b><hr /><p>139 Baker St, E1 7PT, London</p></li>
+                            <li><b>Email</b><hr /><p>info@piece.build</p></li>
+                            <li><b>Phone</b><hr /><p>(02) 123 456 789999</p></li>
+                        </ul>
+                        <hr class="space-sm" />
+                        <hr class="space-sm" />
+                        <div class="icon-links icon-social   social-colors">
+                            <a class="facebook"><i class="icon-facebook"></i></a>
+                            <a class="twitter"><i class="icon-twitter"></i></a>
+                            <a class="instagram"><i class="icon-instagram"></i></a>
+                            <a class="pinterest"><i class="icon-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <i class="scroll-top-btn scroll-top show"></i>
+    <footer class="footer-parallax light">
+        <div class="footer-bar">
+            <div class="container">
+                <span>© Piece Solutions 2020. Made With Love By The Piece Team. </span>
+                <span><img src="media/logo-light.svg" alt="Piece" /></span>
+            </div>
+        </div>
+        <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="themekit/scripts/parallax.min.js"></script>
+        <script src="themekit/scripts/glide.min.js"></script>
+        <script src="themekit/scripts/contact-form/contact-form.js"></script>
+        <script>
+            'use strict';
+            (function ($) {
+                $('.title h2, [class^=col-] > h2,.container  > h2,.container  > h1,.cnt-call h2, [class^=col-] > h1, .col h2, header h1,.fixed-area > h2').each(function () {
+                    let text = $(this).html().trim();
+                    if (text.charAt(text.length - 1) == '.') {
+                        $(this).html(text.substr(0, text.length - 1) + '<span class="dot">.</span>');
+                    }
+                });
+            }(jQuery)); 
+        </script>
+    </footer>
+</body>
+</html>

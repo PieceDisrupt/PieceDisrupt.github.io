@@ -1,0 +1,174 @@
+/*
+
+===================================================================
+CONTENT BOX - CONTENT-BOX.CSS
+===================================================================
+Table of contents
+
+ - Contact form
+ - Date picker
+
+-------------------------------------------------------------------
+
+# CONTACT FORM
+===================================================================
+
+*/
+
+.form-ajax .success-box,
+.form-ajax .error-box {
+  display: none;
+  margin-top: 20px;
+}
+
+.form-ajax-wp.label-visible {
+  margin-top: -10px;
+}
+
+.form-box > .space.xs {
+  height: 12px;
+}
+
+.form-box.text-center input,
+.form-box.text-center textarea,
+.form-box.text-center select {
+  text-align: center;
+}
+
+.form-box p {
+  margin: 0 0 10px 0;
+}
+
+.form-box textarea,
+.form-box select,
+.form-box input {
+  margin: 0 0 20px 0;
+  transition: all 0.5s;
+}
+
+form.form-box textarea {
+  height: 100px;
+}
+
+.form-inline hr {
+  display: none;
+}
+
+.form-inline .btn {
+  white-space: nowrap;
+  width: 100%;
+}
+
+.form-inline textarea,
+.form-inline select,
+.form-inline input {
+  margin-bottom: 0;
+}
+
+.form-box:not(.form-inline) .g-recaptcha {
+  margin-bottom: 15px;
+}
+
+.form-box .cf-loader {
+  height: 25px;
+  margin-left: 10px;
+  display: none;
+}
+
+.form-box .form-checkbox {
+  margin: -5px 0 30px 0;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.form-box.form-inline .form-checkbox {
+  margin-bottom: 0;
+}
+
+.form-box.form-inline .form-checkbox {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.form-box .form-checkbox input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+
+.form-box .form-checkbox label {
+  float: left;
+  width: calc(100% - 40px);
+  margin-left: 15px;
+  font-weight: normal;
+}
+
+.form-box .form-checkbox + button,
+.form-box .form-checkbox + input {
+  margin-top: 15px;
+}
+
+.form-box.align-center .form-checkbox label {
+  float: none;
+  width: auto;
+}
+
+.form-box.align-center .form-checkbox {
+  justify-content: center;
+}
+
+.error-box,
+.success-box {
+  padding: 15px;
+  color: #fff;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-size: 13px;
+}
+
+.error-box {
+  background: #a72a2a;
+}
+
+.success-box {
+  background: #2aa768;
+}
+
+/*
+
+# RESPONSIVE
+===================================================================
+
+*/
+
+@media (max-width: 991.98px) {
+  .form-box:not(.form-inline) [class*="col-lg-"] + [class*="col-lg-"] {
+    margin-top: 0 !important;
+  }
+
+  form.form-inline .btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .form-inline p:empty {
+    display: none;
+  }
+
+  .form-inline p:empty + .btn {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .form-box .form-checkbox input {
+    width: 20px;
+    height: 20px;
+  }
+
+  .form-box.align-center .form-checkbox label {
+    text-align: left;
+  }
+}

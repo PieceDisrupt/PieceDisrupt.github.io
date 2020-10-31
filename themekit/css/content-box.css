@@ -1,0 +1,424 @@
+/*
+
+===================================================================
+CONTENT BOX - CONTENT-BOX.CSS
+===================================================================
+Table of contents
+
+ - Global
+ - Side image
+ - Top icon
+ - Side icon
+ - Top icon
+ - Badge
+ - Info
+ - Blog side and top
+ - Testimonials
+ - Team
+ - Pricing table
+ - Call to action
+
+-------------------------------------------------------------------
+
+# GLOBAL
+===================================================================
+
+*/
+
+.cnt-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.cnt-box:hover .img-box img {
+  opacity: 0.8;
+}
+
+.cnt-box:hover .img-box:before {
+  opacity: 1;
+  transition: all 0s;
+}
+
+.cnt-box .caption h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.cnt-box .caption h3 {
+  font-size: 15px;
+}
+
+.cnt-box .caption p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.cnt-box .caption .btn,
+.cnt-box .caption .btn-text {
+  margin-top: 15px;
+}
+
+.cnt-box.boxed {
+  border-radius: 3px;
+}
+
+.cnt-box.boxed .caption {
+  padding: 30px;
+}
+
+.cnt-box.align-center .caption {
+  text-align: center;
+}
+
+.cnt-box.align-right .caption {
+  text-align: right;
+}
+
+.cnt-box.align-left .caption {
+  text-align: left;
+}
+
+.extra-field {
+  display: inline-block;
+}
+
+.cnt-box .extra-field + p {
+  margin-top: 15px;
+}
+
+.section-color .cnt-box.boxed .caption,
+.section-color .cnt-box-top-icon.boxed > i {
+  background-color: #fff;
+}
+
+/*
+
+# SIDE IMAGE
+===================================================================
+
+*/
+.cnt-box-side {
+  display: flex;
+}
+
+.cnt-box-side > .img-box {
+  width: 30%;
+}
+
+.cnt-box-side > .caption {
+  width: 70%;
+  padding-left: 30px;
+}
+
+.cnt-box-side.boxed > .img-box,
+.cnt-box-side.boxed > .img-box > img {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.cnt-box-side.align-right {
+  flex-direction: row-reverse;
+}
+
+.cnt-box-side.align-right > .caption {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+/*
+
+# TOP IMAGE
+===================================================================
+
+*/
+
+.cnt-box-top .caption {
+  padding-top: 30px;
+}
+
+.cnt-box-top.boxed > .img-box,
+.cnt-box-top.boxed > .img-box > img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/*
+
+# SIDE ICON
+===================================================================
+
+*/
+
+.cnt-box-side-icon {
+  display: flex;
+}
+
+.cnt-box-side-icon > i {
+  width: 50px;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: left;
+  margin: 1px 0 0 1px;
+}
+
+.cnt-box-side-icon > .caption {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.cnt-box-side-icon.boxed > i {
+  padding: 30px;
+  width: 80px;
+  margin: 0;
+}
+
+.cnt-box-side-icon.align-right {
+  flex-direction: row-reverse;
+}
+
+.cnt-box-side-icon.align-right > .caption {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+/*
+
+# TOP ICON
+===================================================================
+
+*/
+
+.cnt-box-top-icon > i {
+  font-size: 50px;
+  line-height: 50px;
+  text-align: left;
+  margin: 0 0 30px 1px;
+  display: block;
+}
+
+.cnt-box-top-icon.boxed > i {
+  margin: 0;
+  padding: 30px 30px 0 30px;
+}
+
+.cnt-box-top-icon.align-center > i {
+  text-align: center;
+}
+
+.cnt-box-top-icon.align-right > i {
+  text-align: right;
+}
+
+/*
+
+# BADGE
+===================================================================
+
+*/
+
+.cnt-box-badge .caption {
+  padding-top: 30px;
+  position: relative;
+}
+
+.cnt-box-badge .badge {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  top: -35px;
+  right: 15px;
+}
+
+.cnt-box-badge.boxed .badge {
+  right: 30px;
+}
+
+.cnt-box-badge.align-center .badge {
+  left: 50%;
+  margin-left: -25px;
+}
+
+.cnt-box-badge.align-right .badge {
+  left: 15px;
+  right: auto;
+}
+
+/*
+
+# INFO
+===================================================================
+
+*/
+
+.cnt-box-info {
+  position: relative;
+}
+
+.cnt-box-info .cnt-info {
+  padding: 15px 0;
+}
+
+.cnt-box-info .cnt-info > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cnt-box-info .caption {
+  padding-top: 30px;
+}
+
+.cnt-box-info .bottom-info {
+  padding: 15px 0 0 0;
+}
+
+.cnt-box-info .bottom-info .caption > *:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.cnt-box-info .extra-field {
+  position: absolute;
+  z-index: 1;
+  margin: 15px;
+}
+
+.cnt-box-info.boxed .extra-field {
+  margin: 30px;
+}
+
+/*
+
+# PRICING TABLE
+===================================================================
+
+*/
+
+.cnt-pricing-table {
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.cnt-pricing-table:hover {
+  transform: translateY(15px);
+}
+
+.cnt-pricing-table .top-area,
+.cnt-pricing-table .bottom-area {
+  padding: 30px;
+}
+
+.cnt-pricing-table > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.cnt-pricing-table > ul > li {
+  list-style: none;
+  padding: 5px 30px;
+  position: relative;
+}
+
+.cnt-pricing-table h2 {
+  font-size: 20px;
+}
+
+.cnt-pricing-table .price {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 30px 0 20px 0;
+}
+
+.cnt-pricing-table .price span {
+  font-size: 50px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.cnt-pricing-table .price label {
+  display: inline;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cnt-pricing-table .top-area p {
+  margin: 0;
+}
+
+.pricing-table-big {
+  padding: 20px 0;
+  margin-top: -20px;
+  height: 100%;
+}
+
+.pricing-table-big > ul {
+  margin: 20px 0 30px 0;
+}
+
+.cnt-pricing-table.align-right {
+  text-align: right;
+}
+
+.cnt-pricing-table.align-left {
+  text-align: left;
+}
+
+/*
+
+# RESPONSIVE
+===================================================================
+
+*/
+
+@media (max-width: 991.98px) {
+  .pricing-table-big {
+    margin-top: 0;
+  }
+
+  .cnt-box-top-icon.align-center-md i {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cnt-box li.icon-links {
+    padding: 10px 0 0 0;
+    margin-left: -5px;
+  }
+
+  .cnt-box-top-icon.align-center-sm i {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cnt-box-side {
+    display: block;
+  }
+
+  .cnt-box-side > .img-box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .cnt-box-side.boxed > .img-box {
+    margin-bottom: 0;
+  }
+
+  .cnt-box-side > .caption {
+    width: 100%;
+    padding-left: 0;
+  }
+}
