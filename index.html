@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="media/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Piece | Putting It All Together.</title>
@@ -16,8 +17,8 @@
     <link rel="stylesheet" href="themekit/css/contact-form.css">
     <link rel="stylesheet" href="skin.css">
     <link rel="icon" href="media/favicon.png">
-    <meta name="msapplication-TileColor" content="#37517E" />
-    <meta name="theme-color" content="#37517E" />
+    <meta content="Piece Team" name="author" />
+    <link rel="manifest" href="manifest.json" />
     <style>
         .box-steps {
             overflow: hidden;
@@ -48,6 +49,21 @@
             height: 120px
         }
 
+        .logo-default {
+            height: 45px;
+            max-width: initial;
+            max-height: initial !important;
+            position: relative;
+            bottom: 5px;
+        }
+
+        @media (max-width: 991.98px) {
+            .logo-default {
+                height: 40px;
+                bottom: 0px;
+            }
+        }
+
         @media (max-width: 767.98px) {
             .step-item:first-child {
                 justify-content: center;
@@ -69,8 +85,8 @@
         <div class="container">
             <div class="menu-brand">
                 <a href="#">
-                    <img class="logo-default" src="media/logo-light.svg" alt="logo" />
-                    <img class="logo-retina" src="media/logo-light.svg" alt="logo" />
+                    <img class="logo-default" src="media/logo-light.png" alt="Piece" />
+                    <img class="logo-retina" src="media/logo-light.png" alt="Piece" />
                 </a>
             </div>
             <i class="menu-btn"></i>
@@ -584,7 +600,7 @@
         <div class="footer-bar">
             <div class="container">
                 <span>© Piece Solutions 2020. Made With Love By The Piece Team. </span>
-                <span><img src="media/logo-light.svg" alt="Piece" /></span>
+                <span><img src="media/logo-light.png"  alt="Piece" /></span>
             </div>
         </div>
         <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
